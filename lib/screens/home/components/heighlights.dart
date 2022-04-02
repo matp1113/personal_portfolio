@@ -13,81 +13,60 @@ class HighLightsInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: defaultPadding),
+      padding: const EdgeInsets.all(8.0),
       child: Responsive.isMobileLarge(context)
           ? Column(
               children: [
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     HeighLight(
-                      counter: AnimatedCounter(
-                        value: 119,
-                        text: "K+",
-                      ),
-                      label: "Subscribers",
+                      year: "3rd ",
+                      label: " Year of micro- and nanotechnolodgies in biophysics",
                     ),
                     HeighLight(
-                      counter: AnimatedCounter(
-                        value: 40,
-                        text: "+",
-                      ),
-                      label: "Videos",
+                      year: "",
+                      label: "|",
+                    ),
+                    HeighLight(
+                      year: "1st ",
+                      label: " Year of automatics and robotics",
+                    ),
+                    HeighLight(
+                      year: "",
+                      label: "|",
+                    ),
+                    HeighLight(
+                      year: "",
+                      label: "AGH Space Systems",
                     ),
                   ],
                 ),
                 const SizedBox(height: defaultPadding),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    HeighLight(
-                      counter: AnimatedCounter(
-                        value: 30,
-                        text: "+",
-                      ),
-                      label: "GitHub Projects",
-                    ),
-                    HeighLight(
-                      counter: AnimatedCounter(
-                        value: 13,
-                        text: "K+",
-                      ),
-                      label: "Stars",
-                    ),
-                  ],
-                ),
               ],
             )
           : Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 HeighLight(
-                  counter: AnimatedCounter(
-                    value: 119,
-                    text: "K+",
-                  ),
-                  label: "Subscribers",
+                  year: "3rd ",
+                  label: " Year of micro- and nanotechnolodgies in biophysics",
                 ),
                 HeighLight(
-                  counter: AnimatedCounter(
-                    value: 40,
-                    text: "+",
-                  ),
-                  label: "Videos",
+                  year: "",
+                  label: "|",
                 ),
                 HeighLight(
-                  counter: AnimatedCounter(
-                    value: 30,
-                    text: "+",
-                  ),
-                  label: "GitHub Projects",
+                  year: "1st ",
+                  label: " Year of automatics and robotics",
                 ),
                 HeighLight(
-                  counter: AnimatedCounter(
-                    value: 13,
-                    text: "K+",
-                  ),
-                  label: "Stars",
+                  year: "",
+                  label: "|",
+                ),
+                HeighLight(
+                  year: "",
+                  label: "AGH Space Systems",
                 ),
               ],
             ),

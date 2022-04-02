@@ -17,7 +17,7 @@ class HomeBanner extends StatelessWidget {
         fit: StackFit.expand,
         children: [
           Image.asset(
-            "assets/images/bg.jpeg",
+            "assets/images/VILLAGE.jpg",
             fit: BoxFit.cover,
           ),
           Container(color: darkColor.withOpacity(0.66)),
@@ -28,7 +28,7 @@ class HomeBanner extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Discover my Amazing \nArt Space!",
+                  "My portfolio!",
                   style: Responsive.isDesktop(context)
                       ? Theme.of(context).textTheme.headline3!.copyWith(
                             fontWeight: FontWeight.bold,
@@ -82,7 +82,7 @@ class MyBuildAnimatedText extends StatelessWidget {
           if (!Responsive.isMobileLarge(context)) FlutterCodedText(),
           if (!Responsive.isMobileLarge(context))
             SizedBox(width: defaultPadding / 2),
-          Text("I build "),
+          Text(""),
           Responsive.isMobile(context)
               ? Expanded(child: AnimatedText())
               : AnimatedText(),
@@ -105,16 +105,16 @@ class AnimatedText extends StatelessWidget {
     return AnimatedTextKit(
       animatedTexts: [
         TyperAnimatedText(
-          "responsive web and mobile app.",
-          speed: Duration(milliseconds: 60),
+          "I am an active and curious person",
+          speed: Duration(milliseconds: 100),
         ),
         TyperAnimatedText(
-          "complete e-Commerce app UI.",
-          speed: Duration(milliseconds: 60),
+          "interested in building apps",
+          speed: Duration(milliseconds: 100),
         ),
         TyperAnimatedText(
-          "Chat app with dark and light theme.",
-          speed: Duration(milliseconds: 60),
+          "learn more about me",
+          speed: Duration(milliseconds: 100),
         ),
       ],
     );

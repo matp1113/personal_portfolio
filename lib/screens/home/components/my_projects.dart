@@ -16,7 +16,7 @@ class MyProjects extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "My Projects",
+          "About me:",
           style: Theme.of(context).textTheme.headline6,
         ),
         const SizedBox(height: defaultPadding),
