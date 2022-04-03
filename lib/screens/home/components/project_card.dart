@@ -35,7 +35,12 @@ class ProjectCard extends StatelessWidget {
           ),
           Spacer(),
           TextButton(
-            onPressed: () {},
+            onPressed: () async {
+              Hero(
+                tag: 'tag1', 
+                child: Text("More")
+                );
+            },
             child: Text(
               "Read More >>",
               style: TextStyle(color: primaryColor),

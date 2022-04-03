@@ -53,7 +53,7 @@ class HomeBanner extends StatelessWidget {
                       backgroundColor: primaryColor,
                     ),
                     child: Text(
-                      "EXPLORE NOW",
+                      "About me",
                       style: TextStyle(color: darkColor),
                     ),
                   ),
