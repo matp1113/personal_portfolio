@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/components/animated_progress_indicator.dart';
 
 import '../../../constants.dart';
+import 'StarDisplay.dart';
 
 class Skills extends StatelessWidget {
   const Skills({
@@ -17,34 +17,123 @@ class Skills extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(vertical: defaultPadding),
           child: Text(
-            "Skills",
+            "Coding skills",
             style: Theme.of(context).textTheme.subtitle2,
           ),
         ),
-        Row(
+        Column(
           children: [
-            Expanded(
-              child: AnimatedCircularProgressIndicator(
-                percentage: 0.8,
-                label: "Flutter",
+            Row(
+            children: [
+              //----------------------------------
+              Expanded(
+                child:  
+                  Text(
+                    "C++",
+                    style: TextStyle(
+                      color: Colors.blue,
+                      fontSize: 15,
+                    ))
               ),
-            ),
-            SizedBox(width: defaultPadding),
-            Expanded(
-              child: AnimatedCircularProgressIndicator(
-                percentage: 0.72,
-                label: "Django",
+              Expanded(
+                child:  
+                  StarDisplay(value: 4)
               ),
+            ],
             ),
-            SizedBox(width: defaultPadding),
-            Expanded(
-              child: AnimatedCircularProgressIndicator(
-                percentage: 0.65,
-                label: "Firebase",
+            //----------------------------------
+            Row(
+            children: [
+              Expanded(
+                child:  
+                  Text(
+                    "Python",
+                    style: TextStyle(
+                      color: Colors.blue,
+                      fontSize: 15,
+                    ))
               ),
+              Expanded(
+                child:  
+                  StarDisplay(value: 3)
+              ),
+            ],
             ),
-          ],
-        ),
+            //----------------------------------
+            Row(
+            children: [
+              Expanded(
+                child:  
+                  Text(
+                    "C",
+                    style: TextStyle(
+                      color: Colors.blue,
+                      fontSize: 15,
+                    ))
+              ),
+              Expanded(
+                child:  
+                  StarDisplay(value: 3)
+              ),
+            ],
+            ),
+            //----------------------------------
+            Row(
+            children: [
+              Expanded(
+                child:  
+                  Text(
+                    "GIT",
+                    style: TextStyle(
+                      color: Colors.blue,
+                      fontSize: 15,
+                    ))
+              ),
+              Expanded(
+                child:  
+                  StarDisplay(value: 2)
+              ),
+            ],
+            ),
+            //----------------------------------
+            Row(
+            children: [
+              Expanded(
+                child:  
+                  Text(
+                    "Dart",
+                    style: TextStyle(
+                      color: Colors.blue,
+                      fontSize: 15,
+                    ))
+              ),
+              Expanded(
+                child:  
+                  StarDisplay(value: 2)
+              ),
+            ],
+            ),
+            //----------------------------------
+            Row(
+            children: [
+              Expanded(
+                child:  
+                  Text(
+                    "Flutter",
+                    style: TextStyle(
+                      color: Colors.blue,
+                      fontSize: 15,
+                    ))
+              ),
+              Expanded(
+                child:  
+                  StarDisplay(value: 1)
+              ),
+            ],
+            ),
+            //----------------------------------
+          ]
+        )
       ],
     );
   }

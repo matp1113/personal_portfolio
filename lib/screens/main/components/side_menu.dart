@@ -40,7 +40,7 @@ class SideMenu extends StatelessWidget {
                     ),
                     Skills(),
                     SizedBox(height: defaultPadding),
-                    Coding(),
+                    //Coding(),
                     Knowledges(),
                     Divider(),
                     SizedBox(height: defaultPadding / 2),

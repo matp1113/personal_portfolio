@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_profile/models/Project.dart';
 import 'package:flutter_profile/responsive.dart';
+import 'package:flutter_profile/screens/projects/chinese_screen.dart';
 
 import '../../../constants.dart';
 
@@ -35,11 +36,10 @@ class ProjectCard extends StatelessWidget {
           ),
           Spacer(),
           TextButton(
-            onPressed: () async {
-              Hero(
-                tag: 'tag1', 
-                child: Text("More")
-                );
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(
+                builder: (context) => ChineseScreen()
+              ));
             },
             child: Text(
               "Read More >>",
