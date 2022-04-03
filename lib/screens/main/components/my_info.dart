@@ -24,7 +24,7 @@ class MyInfo extends StatelessWidget {
               style: Theme.of(context).textTheme.subtitle2,
             ),
             Text(
-              "Student on AGH UST ic Cracow and AGH Space Systems team member",
+              "Student on AGH UST in Cracow and AGH Space Systems team member",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.w200,

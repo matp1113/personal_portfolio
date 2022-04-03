@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_profile/constants.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'area_info_text.dart';
 import 'coding.dart';
@@ -44,7 +45,14 @@ class SideMenu extends StatelessWidget {
                     Divider(),
                     SizedBox(height: defaultPadding / 2),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () async {
+                        const String _url = "https://drive.google.com/file/d/1HlxBz5s8j3A-7IjWizBqu_Evh9uo8RA-/view?usp=sharing";
+                        if (await canLaunch(_url)) {
+                          launch(_url);
+                        } else {
+                          throw "Could not launch $_url";
+                        }
+                      },
                       child: FittedBox(
                         child: Row(
                           children: [
@@ -70,15 +78,36 @@ class SideMenu extends StatelessWidget {
                         children: [
                           Spacer(),
                           IconButton(
-                            onPressed: () {},
+                            onPressed: () async {
+                              const String _url = "https://www.linkedin.com/in/mateusz-patora-09682b227/";
+                              if (await canLaunch(_url)) {
+                                launch(_url);
+                              } else {
+                              throw "Could not launch $_url";
+                              }
+                            },
                             icon: SvgPicture.asset("assets/icons/linkedin.svg"),
                           ),
                           IconButton(
-                            onPressed: () {},
+                            onPressed: () async {
+                              const String _url = "https://github.com/matp1113";
+                              if (await canLaunch(_url)) {
+                                launch(_url);
+                              } else {
+                              throw "Could not launch $_url";
+                              }
+                            },
                             icon: SvgPicture.asset("assets/icons/github.svg"),
                           ),
                           IconButton(
-                            onPressed: () {},
+                            onPressed: () async {
+                              const String _url = "https://drive.google.com/file/d/1HlxBz5s8j3A-7IjWizBqu_Evh9uo8RA-/view?usp=sharing";
+                              if (await canLaunch(_url)) {
+                                launch(_url);
+                              } else {
+                              throw "Could not launch $_url";
+                              }
+                            },
                             icon: SvgPicture.asset("assets/icons/twitter.svg"),
                           ),
                           Spacer(),
