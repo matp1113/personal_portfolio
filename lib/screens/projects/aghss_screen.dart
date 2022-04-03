@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ChineseScreen extends StatefulWidget {
-  const ChineseScreen({Key? key}) : super(key: key);
+class AghssScreen extends StatefulWidget {
+  const AghssScreen({Key? key}) : super(key: key);
 
   @override
-  _ChineseScreenState createState() => _ChineseScreenState();
+  _AghssScreenState createState() => _AghssScreenState();
 }
 
-class _ChineseScreenState extends State<ChineseScreen> {
+class _AghssScreenState extends State<AghssScreen> {
   @override
   Widget build(BuildContext context){
     return Container(
@@ -16,7 +16,7 @@ class _ChineseScreenState extends State<ChineseScreen> {
           RichText(
             text: TextSpan(
               children: const <TextSpan>[
-                TextSpan(text: "My chinese")
+                TextSpan(text: "Member")
               ]
             )
             ),
