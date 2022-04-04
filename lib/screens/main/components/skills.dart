@@ -127,7 +127,7 @@ class Skills extends StatelessWidget {
               ),
               Expanded(
                 child:  
-                  StarDisplay(value: 1)
+                  StarDisplay(value: 2)
               ),
             ],
             ),

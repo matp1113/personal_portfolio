@@ -46,7 +46,7 @@ class SideMenu extends StatelessWidget {
                     SizedBox(height: defaultPadding / 2),
                     TextButton(
                       onPressed: () async {
-                        const String _url = "https://drive.google.com/file/d/1HlxBz5s8j3A-7IjWizBqu_Evh9uo8RA-/view?usp=sharing";
+                        const String _url = "https://drive.google.com/file/d/1Tl2XnQj_c3p8WjVOgjJHJvXRBVM7AEvA/view?usp=sharing";
                         if (await canLaunch(_url)) {
                           launch(_url);
                         } else {

@@ -20,7 +20,7 @@ class MyProjects extends StatelessWidget {
           "About me:",
           style: Theme.of(context).textTheme.headline6,
         ),
-        const SizedBox(height: defaultPadding),
+        const SizedBox(height: defaultPadding, width: defaultPadding),
         Responsive(
           mobile: ProjectsGridView(
             crossAxisCount: 1,

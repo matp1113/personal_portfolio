@@ -1,6 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_profile/screens/projects/chinese_screen.dart';
 import '../screens/projects/aghss_screen.dart';
+import '../screens/projects/karate_screen.dart';
+import '../screens/projects/programming_screen.dart';
+import '../screens/projects/studies_screen.dart';
+import '../screens/projects/hobbies_screen.dart';
 
 class Project {
   final String? title, description;
@@ -25,24 +29,24 @@ List<Project> demo_projects = [
     title: "Karate",
     description:
         "Karate Kyokushin “Sokół AGH” section trainings",
-    classes: AghssScreen()
+    classes: KarateScreen()
   ),
   Project(
     title: "Programming skills",
     description:
         "More precisely about my programming skills",
-    classes: AghssScreen()
+    classes: ProgrammingScreen()
   ),
   Project(
-    title: "My hobbies",
+    title: "Studies",
     description:
-        "Something about my hobbies and passions",
-    classes: AghssScreen()
+        "More about what I'm doing at AGH UST",
+    classes: StudiesScreen()
   ),
   Project(
-    title: "Extra activities",
+    title: "My hobbies and extra activities",
     description:
         "What I'm doing apart studies",
-    classes: AghssScreen()
+    classes: HobbiesScreen()
   ),
 ];
