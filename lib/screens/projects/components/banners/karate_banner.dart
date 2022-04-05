@@ -105,15 +105,7 @@ class AnimatedText extends StatelessWidget {
     return AnimatedTextKit(
       animatedTexts: [
         TyperAnimatedText(
-          "I am an active and curious person",
-          speed: Duration(milliseconds: 100),
-        ),
-        TyperAnimatedText(
-          "interested in building apps",
-          speed: Duration(milliseconds: 100),
-        ),
-        TyperAnimatedText(
-          "learn more about me",
+          "Work in progress",
           speed: Duration(milliseconds: 100),
         ),
       ],

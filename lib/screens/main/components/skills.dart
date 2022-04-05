@@ -47,7 +47,7 @@ class Skills extends StatelessWidget {
               Expanded(
                 child:  
                   Text(
-                    "Python",
+                    "C",
                     style: TextStyle(
                       color: Colors.blue,
                       fontSize: 15,
@@ -65,7 +65,7 @@ class Skills extends StatelessWidget {
               Expanded(
                 child:  
                   Text(
-                    "C",
+                    "Python",
                     style: TextStyle(
                       color: Colors.blue,
                       fontSize: 15,
@@ -73,7 +73,7 @@ class Skills extends StatelessWidget {
               ),
               Expanded(
                 child:  
-                  StarDisplay(value: 3)
+                  StarDisplay(value: 2)
               ),
             ],
             ),
