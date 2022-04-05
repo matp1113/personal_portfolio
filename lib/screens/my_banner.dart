@@ -1,12 +1,11 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_profile/responsive.dart';
-import 'package:flutter_profile/screens/my_screen.dart';
 
-import '../../../constants.dart';
+import '../../../../constants.dart';
 
-class HomeBanner extends StatelessWidget {
-  const HomeBanner({
+class MyBanner extends StatelessWidget {
+  const MyBanner({
     Key? key,
   }) : super(key: key);
 
@@ -18,7 +17,7 @@ class HomeBanner extends StatelessWidget {
         fit: StackFit.expand,
         children: [
           Image.asset(
-            "assets/images/VILLAGE.jpg",
+            "assets/images/theather.jpg",
             fit: BoxFit.cover,
           ),
           Container(color: darkColor.withOpacity(0.66)),
@@ -29,7 +28,7 @@ class HomeBanner extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "My portfolio!",
+                  "About me and this page",
                   style: Responsive.isDesktop(context)
                       ? Theme.of(context).textTheme.headline3!.copyWith(
                             fontWeight: FontWeight.bold,
@@ -44,24 +43,20 @@ class HomeBanner extends StatelessWidget {
                   const SizedBox(height: defaultPadding / 2),
                 MyBuildAnimatedText(),
                 SizedBox(height: defaultPadding),
-                if (!Responsive.isMobileLarge(context))
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(
-                builder: (context) => MyScreen()
-              ));
-                    },
-                    style: TextButton.styleFrom(
-                      padding: EdgeInsets.symmetric(
-                          horizontal: defaultPadding * 2,
-                          vertical: defaultPadding),
-                      backgroundColor: primaryColor,
-                    ),
-                    child: Text(
-                      "About me and this page",
-                      style: TextStyle(color: darkColor),
-                    ),
-                  ),
+                // if (!Responsive.isMobileLarge(context))
+                //   ElevatedButton(
+                //     onPressed: () {},
+                //     style: TextButton.styleFrom(
+                //       padding: EdgeInsets.symmetric(
+                //           horizontal: defaultPadding * 2,
+                //           vertical: defaultPadding),
+                //       backgroundColor: primaryColor,
+                //     ),
+                //     child: Text(
+                //       "About me",
+                //       style: TextStyle(color: darkColor),
+                //     ),
+                //   ),
               ],
             ),
           )

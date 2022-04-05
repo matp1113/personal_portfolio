@@ -88,6 +88,7 @@ class SideMenu extends StatelessWidget {
                             },
                             icon: SvgPicture.asset("assets/icons/linkedin.svg"),
                           ),
+                          Spacer(),
                           IconButton(
                             onPressed: () async {
                               const String _url = "https://github.com/matp1113";
@@ -98,17 +99,6 @@ class SideMenu extends StatelessWidget {
                               }
                             },
                             icon: SvgPicture.asset("assets/icons/github.svg"),
-                          ),
-                          IconButton(
-                            onPressed: () async {
-                              const String _url = "https://drive.google.com/file/d/1HlxBz5s8j3A-7IjWizBqu_Evh9uo8RA-/view?usp=sharing";
-                              if (await canLaunch(_url)) {
-                                launch(_url);
-                              } else {
-                              throw "Could not launch $_url";
-                              }
-                            },
-                            icon: SvgPicture.asset("assets/icons/twitter.svg"),
                           ),
                           Spacer(),
                         ],
