@@ -29,7 +29,7 @@ class HobbiesHomeScreen extends StatelessWidget {
                         ),
                         children: <InlineSpan>[
                           TextSpan(
-                            text: "I started playing instruments with playing piano at the age of 9 in local cultural center in Bielsko-Biała. I liked it very much and I have been continuing it for 5 consecutive years. At the age of 12 I also started to play guitar, that in the future become my favourite instrument. Now I have two electric guitars that I love playing on and from time to time I get back to the piano. \n\n",
+                            text: "I started playing instruments with playing piano at the age of 9 in local cultural center in Bielsko-Biała. I liked it very much and I have been continuing it for 5 consecutive years. At the age of 12 I also started to play guitar, that I am still playing on. From time to time I also like to get back to playing piano that make me relaxed and happy. \n\n",
                             style: TextStyle(
                               color: Colors.amber,
                               fontSize: 20,
