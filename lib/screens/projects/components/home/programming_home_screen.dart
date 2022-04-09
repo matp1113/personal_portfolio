@@ -29,7 +29,7 @@ class ProgrammingHomeScreen extends StatelessWidget {
                         ),
                         children: <InlineSpan>[
                           TextSpan(
-                            text: "I used to code in this language several times, starting at the age of 14 with LEGO robots programming. AT AGH UST i had to code in C++ twice during my studies with usage of OOP. Almost the same relate to the C coding, as there were C language classes on Applied Physics as well as on Automatic control and robotics.\n\n",
+                            text: "I used to code in this language several times, starting at the age of 14 with LEGO robots programming. At AGH UST i had to code in C++ twice during my studies with usage of OOP. Almost the same relate to the C coding, as there were C language classes on Applied Physics as well as on Automatic control and robotics.\n\n",
                             style: TextStyle(
                               color: Colors.amber,
                               fontSize: 20,
@@ -57,7 +57,7 @@ class ProgrammingHomeScreen extends StatelessWidget {
                             )                          
                           ),
                           TextSpan(
-                            text: "I started to learn Dart and Flutter on February 2022. Although it is a very short period of time since I started, but as I am very motivated to learn them, I already learned basics of the Dart and get know some of Flutter, that enabled me to build this page.",
+                            text: "I started to learn Dart and Flutter on February 2022. Although it is a very short period of time since I started, I am very motivated to learn them and already learned basics of the Dart and get know some of Flutter features, that enabled me to build this page.",
                             style: TextStyle(
                               color: Colors.amber,
                               fontSize: 20,

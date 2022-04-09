@@ -16,35 +16,43 @@ class HighLightsInfo extends StatelessWidget {
       child: Responsive.isMobileLarge(context)
           ? Column(
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    HeighLight(
-                      year: "3rd ",
-                      label: " Year of micro- and nanotechnolodgies in biophysics",
+                Expanded(
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        HeighLight(
+                          year: "3rd ",
+                          label: " Year of micro- and nanotechnolodgies in biophysics",
+                        ),
+                        HeighLight(
+                          year: "",
+                          label: "|",
+                        ),
+                        HeighLight(
+                          year: "1st ",
+                          label: " Year of automatics and robotics",
+                        ),
+                        HeighLight(
+                          year: "",
+                          label: "|",
+                        ),
+                        HeighLight(
+                          year: "",
+                          label: "AGH Space Systems",
+                        ),
+                      ],
                     ),
-                    HeighLight(
-                      year: "",
-                      label: "|",
-                    ),
-                    HeighLight(
-                      year: "1st ",
-                      label: " Year of automatics and robotics",
-                    ),
-                    HeighLight(
-                      year: "",
-                      label: "|",
-                    ),
-                    HeighLight(
-                      year: "",
-                      label: "AGH Space Systems",
-                    ),
-                  ],
-                ),
+                  )
+                ), 
                 const SizedBox(height: defaultPadding),
               ],
             )
-          : Row(
+          : Expanded(
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 HeighLight(
@@ -69,6 +77,8 @@ class HighLightsInfo extends StatelessWidget {
                 ),
               ],
             ),
+            )
+          )
     );
   }
 }
