@@ -22,7 +22,7 @@ class Skills extends StatelessWidget {
           ),
         ),
         Column(
-          children: [
+          children: [ 
             Row(
             children: [
               //----------------------------------
@@ -30,6 +30,7 @@ class Skills extends StatelessWidget {
                 child:  
                   Text(
                     "C++",
+                    maxLines: 1,
                     style: TextStyle(
                       color: Colors.blue,
                       fontSize: 15,
@@ -48,6 +49,7 @@ class Skills extends StatelessWidget {
                 child:  
                   Text(
                     "C",
+                    maxLines: 1,
                     style: TextStyle(
                       color: Colors.blue,
                       fontSize: 15,
@@ -66,6 +68,7 @@ class Skills extends StatelessWidget {
                 child:  
                   Text(
                     "Python",
+                    maxLines: 1,
                     style: TextStyle(
                       color: Colors.blue,
                       fontSize: 15,
@@ -84,6 +87,7 @@ class Skills extends StatelessWidget {
                 child:  
                   Text(
                     "GIT",
+                    maxLines: 1,
                     style: TextStyle(
                       color: Colors.blue,
                       fontSize: 15,
@@ -102,6 +106,7 @@ class Skills extends StatelessWidget {
                 child:  
                   Text(
                     "Dart",
+                    maxLines: 1,
                     style: TextStyle(
                       color: Colors.blue,
                       fontSize: 15,
@@ -120,6 +125,7 @@ class Skills extends StatelessWidget {
                 child:  
                   Text(
                     "Flutter",
+                    maxLines: 1,
                     style: TextStyle(
                       color: Colors.blue,
                       fontSize: 15,
