@@ -29,7 +29,7 @@ class AghssHomeScreen extends StatelessWidget {
                         ),
                         children: <InlineSpan>[
                           TextSpan(
-                            text: "I've always been interested in space topics. I admired SpaceX launching rockets and I had an interest in Space exploration. So when I started my studies at AGH UST and got know about AGH Space Systems, I knew that there is no way for me, not be a part of the team\n\n",
+                            text: "I've always been interested in space topics. I admired SpaceX launching rockets and I had an interest in Space exploration. So when I started my studies at AGH UST and found out about AGH Space Systems, I knew that there is no way for me, not be a part of the team\n\n",
                             style: TextStyle(
                               color: Colors.amber,
                               fontSize: 20,
